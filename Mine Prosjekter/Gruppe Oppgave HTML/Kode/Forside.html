@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+
+/* Koden til Bok sidene er forklart/kommenter i BokSideTemplate.html så vi ikke måtte skrive det på hver eneste bok side */
+
+/* endrer bakgrund's bilde */
+body {
+    background-image: url('White.png');
+}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+
+/* Her starter "Top Header" */
+
+
+/* Endrer font */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+/* header innstilnger (farge på tekst, sentrert tekst ++) */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* endrer fargen på firkanten som er rundt den fanen i header som er aktivert */
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+  <!-- Navigasjons Knapper -->
+<div class="header">
+  <a href="Forside.html" class="logo"><img src="Logo.png" alt="Logo" width="250" height="50"></a>
+  <div class="header-right">
+    <a class="active" href="Forside.html">Forside</a>
+    <a href="Bokside.html">Bøker</a>
+    <a href="Kontakt.html">Kontakt</a>
+    <a href="C:\Users\aleks\Desktop\Portefolio Side\Code\Index.html">Tilbake til Portefolio</a>
+  </div>
+</div>
+
+</body>
+<!-- Her slutter "Top Header" -->
+
+<!-- Her Starter "Hero Image" -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+    /* endrer høyde og font */
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Bakgrund bilde og bakgrunds innstilnger */
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Bokhandel.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Tekst innstilinger */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  /* Knapp Innstilnger */
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  /* Farge på knapp når musepeker er over */
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+  </style>
+  </head>
+  <body>
+  
+    <!--Knapp for å gå til boksiden-->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Kalles Bokhandel</h1>
+      <p>Vi har alt for din lese-lyst</p>
+      <button><a href="Bokside.html" class="logo">Se Vårt Utvalg</a></button>
+    </div>
+  </div>
+  <!-- Her stopper "Hero Image" -->
+
+  <!-- Her starter "Våre Ansatte" -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    html {
+      box-sizing: border-box;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    /* Innstilinger for kolonene */
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+    
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+    
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .container {
+      padding: 0 16px;
+    }
+    
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    /* farge på tittelen */
+    .title {
+      color: grey;
+    }
+    
+    /* Innstilnger til knappene */
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    /* farge på knapp når musepeker er over */
+    .button:hover {
+      background-color: #555;
+    }
+    </style>
+    </head>
+    <body>
+    
+      <!-- Tekst -->
+    <h2>Våre Ansatte</h2>
+    <p>Se litt om våre snille ansatte</p>
+    <br>
+    
+    <!--Kontaktsinformasjons "kort"-->
+
+    <!-- Joakim -->
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="Joakim.png" alt="Joakim" style="width:100%">
+          <div class="container">
+            <h2>Joakim</h2>
+            <p class="title">CEO</p>
+            <p>joakim.vangen@gmail.com</p>
+            <p><button class="button"><a href="Kontakt.html" class="button">Kontakt</a><button></p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Sahil -->
+      <div class="column">
+        <div class="card">
+          <img src="Sahil.jpg" alt="Sahil" style="width:100%">
+          <div class="container">
+            <h2>Sahil</h2>
+            <p class="title">Salg's Ansvarlig</p>
+            <p>sahil@gmail.com</p>
+            <p><button class="button"><a href="Kontakt.html" class="button">Kontakt</a><button></p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Aleksander -->
+      <div class="column">
+        <div class="card">
+          <img src="Aleksander.png" alt="Aleksander" style="width:100%">
+          <div class="container">
+            <h2>Aleksander</h2>
+            <p class="title">Designer</p>
+            <p>aleksanrei@viken.no</p>
+            <p><button class="button"><a href="Kontakt.html" class="button">Kontakt</a><button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </body>
+
+</body>
+<!-- Her slutter "Våre Ansatte" -->
+
+<!-- Her starter "Footer" -->
+<!-- Koden er nesten den samme som "Top Header" -->
+  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+  <!--Footer-->
+<div class="header">
+  <a href="Forside.html" class="logo"><img src="Logo.png" alt="Logo" width="250" height="50"></a>
+  <div class="header-right">
+    <a>Tlf: 123-Kalles-Bokhandel-321</a>
+    <a>Epost: kallesbokhandel@gmail.no</a>
+  </div>
+</div>
+
+</body>
+
+</body>
+</html> 

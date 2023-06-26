@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+/* Her starter "Top Header" */
+
+/* Endrer font */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* endrer bakgrundsfarge og mellomrommet mellem ting i header */
+.header {
+  overflow: hidden;
+  background-color: #000000;
+  padding: 20px 10px;
+}
+
+/* header innstilnger (farge på tekst, sentrert tekst ++) */
+.header a {
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Størelse og font på header teksten */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #515151;
+  color: rgb(255, 253, 253);
+}
+
+/* endrer fargen på firkanten som er rundt den fanen i header som er aktivert */
+.header a.active {
+  background-color: rgb(36, 36, 36);
+  color: rgb(255, 255, 255);
+}
+
+/* får header til å "feste seg" på høyre side av skjermen */
+.header-right {
+  float: right;
+}
+
+/* gjør at når skjermen er max 500 piksler stor så vil header strekke seg ut vannrett,
+og hvis den er mindre så streker den seg loddrett  */
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+  <!-- Navigasjons Knapper -->
+<div class="header">
+  <a href="Index.html" class="logo"><img src="C:\Users\aleks\Desktop\Portefolio Side\Img\ABR2.png"" alt="BR" width="275" height="75"></a>
+  <div class="header-right">
+    <a class="active" href="Index.html">Forside</a>
+    <a href="CV.html">CV</a>
+    <a href="C:\Users\aleks\Desktop\Portefolio side\Code\Kontakt.html">Kontakt</a>
+  </div>
+</div>
+
+</body>
+<!-- Her slutter "Top Header" -->
+
+
+
+<!-- Bildet under "header" og over "mine prosjekter" -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("BildeProsjekt2.png");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="hero-image">
+    <div class="hero-text">
+    </div>
+  </div>
+  </body>
+
+
+</style>
+</head>
+
+
+
+<!-- Her starter "mine prosjekter" -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* innstilinger for Overskrift nr 1 / <h1>Overskrift 1</h1> */
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Lager mellomrom melleom hver kolone */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* lag 3 koloner som er ved siden av hverandre */
+/* Gjemmer alle elementer som ikke har "show" classen */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Endrer bakgrunds farge og mellomrom inni kolonene */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Leger til "show" klasen på det som filtreres */
+.show {
+  display: block;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<!-- Mine Prosjekter Innholdet starter her -->
+<div class="main">
+
+<h1>Aleksander Bryhn Reitan</h1>
+
+<h2>Mine Prosjekter</h2>
+
+<!-- Bestemmer hva de forkjelige knappene skal filtrere. Feks. at når man tryker "spill" så kommer bare ting som har kategorien spill -->
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Alt</button>
+  <button class="btn" onclick="filterSelection('Programmering')"> Programmering</button>
+  <button class="btn" onclick="filterSelection('Spill')"> Spill</button>
+</div>
+
+<!-- Kollonene med prosjektene mine -->
+<div class="row">
+
+    <!-- Bestemmer hvilke kategori dette prosjektet er -->
+  <div class="column Programmering">
+    <div class="content">
+      <!-- Bildet til dette prosjektet -->
+    <img src="C:\Users\aleks\Desktop\Portefolio Side\Img\ABR4.png" alt="Car" style="width:100%">
+      <h4>Min Portefolio Side</h4>
+      <p>Den siden du er på nå.<br>Sist Oppdatert: April 2023</p>
+    </div>
+  </div>
+
+
+  <div class="column Programmering">
+    <div class="content">
+      <a href="C:\Users\aleks\Desktop\Portefolio side\Mine Prosjekter\Gruppe Oppgave HTML\Kode\Forside.html" class="logo"><img src="C:\Users\aleks\Desktop\Portefolio Side\Img\KB.png" alt="KB" style="width:100%"></a>
+      <h4>Kalles Bokhandel</h4>
+      <p>Øvelse innenfor Gruppe Sammarbeid.<br>Laget / Oppdatert Februar 2023.</p>
+    </div>
+  </div>
+
+  <div class="column Programmering">
+    <div class="content">
+      <a href="C:\Users\aleks\Desktop\Portefolio side\Mine Prosjekter\HønefossVGS Hjemmeside\Index.html"> <img src="C:\Users\aleks\Desktop\Portefolio Side\Img\HVGS.jpg" alt="HVGS" style="width:100%"></a>
+      <h4>Hønefoss VGS Hjemmeside</h4>
+      <p>En "ny" hjemmeside til Hønefoss VGS.<br>Laget/Oppdatert Desember 2022</p>
+    </div>
+  </div>
+
+  <div class="column Spill">
+    <div class="content">
+      <a href="C:\Users\aleks\Desktop\Portefolio side\Mine Prosjekter\For All The Fallen\For All The Fallen.html"><img src="C:\Users\aleks\Desktop\Portefolio side\Mine Prosjekter\For All The Fallen\FATF.png" alt="Car" style="width:100%"></a>
+      <h4>For All The Fallen</h4>
+      <p>Et spill som handler om å overleve en apocalypse.<br>Laget Mars 2023 men blir fortsatt oppdatert</p>
+    </div>
+  </div>
+
+  <div class="column Spill">
+    <div class="content">
+      <a href="C:\Users\aleks\Desktop\Portefolio side\Mine Prosjekter\Tire Burn\TireBurn.html"><img src="C:\Users\aleks\Desktop\Portefolio Side\Mine Prosjekter\Tire Burn\TireBurn.png" alt="Car" style="width:100%"></a>
+      <h4>Tire-Burn</h4>
+      <p>Et kjøre spill med flere moduser og kjøretøy.<br>Laget/Oppdatert Februar 2022</p>
+    </div>
+  </div>
+
+  <div class="column Spill">
+    <div class="content">
+      <a href="C:\Users\aleks\Desktop\Portefolio side\Mine Prosjekter\The Climber\The Climber.html"><img src="C:\Users\aleks\Desktop\Portefolio Side\Img\climb.png" alt="Car" style="width:100%"></a>
+      <h4>The Climber</h4>
+      <p>Et VR klatre spill.<br>Laget/Oppdatert April 2021</p>
+    </div>
+  </div>
+
+
+
+
+
+
+  </div>
+
+  
+</div>
+
+
+<!-- Funksonen som gjør det mulig å filtrere kategorier -->
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// <!-- Funksonen som gjør det mulig å lege til en klasse -->
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+// <!-- Funksonen som gjør det mulig å fjerne en klasse -->
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Leger til "Aktiv" klassen på knappen man trykker på.
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+
+<body>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {box-sizing: border-box;}
+  
+  /* Her starter "Footer" (det er samme kode som i Header bare minus Navigasjons knappene) */
+  
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header {
+    overflow: hidden;
+    background-color: #000000;
+    padding: 20px 10px;
+  }
+  
+
+  .header a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    background-color: #515151;
+    color: rgb(255, 253, 253);
+  }
+  
+ 
+  .header a.active {
+    background-color: rgb(36, 36, 36);
+    color: rgb(255, 255, 255);
+  }
+  
+  .header-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+  }
+  </style>
+  </head>
+  <body>
+  
+
+    <!-- Leger til logoen i Footer -->
+  <div class="header">
+    <a href="Index.html" class="logo"><img src="C:\Users\aleks\Desktop\Portefolio Side\Img\ABR2.png"" alt="BR" width="275" height="75"></a>
+    <div class="header-right">
+    </div>
+  </div>
+  
+  </body>
+  <!-- Her slutter "Footer" -->

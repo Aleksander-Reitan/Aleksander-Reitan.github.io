@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+/* Her starter "Top Header" */
+
+/* Endrer font */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #000000;
+  padding: 20px 10px;
+}
+
+/* header innstilnger (farge på tekst, sentrert tekst ++) */
+.header a {
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #515151;
+  color: rgb(255, 253, 253);
+}
+
+/* endrer fargen på firkanten som er rundt den fanen i header som er aktivert */
+.header a.active {
+  background-color: rgb(36, 36, 36);
+  color: rgb(255, 255, 255);
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+  <!-- Navigasjons Knapper -->
+<div class="header">
+  <a href="Index.html" class="logo"><img src="C:\Users\aleks\Desktop\Portefolio Side\Img\ABR2.png"" alt="BR" width="275" height="75"></a>
+  <div class="header-right">
+    <a href="Index.html">Forside</a>
+    <a href="CV.html">CV</a>
+    <a href="">Kontakt</a>
+  </div>
+</div>
+
+</body>
+<!-- Her slutter "Top Header" -->
+
+<!-- Bildet under "header" og over "mine prosjekter" -->
+<img src="C:\Users\aleks\Desktop\Portefolio Side\Img\DreamState.png" alt="Nature" width="1225" height="500">
+
+<h1>Dream State</h1>
+<h2>Dream State er en kort musikk video<br>som er ment til å vise hvordan<br>det kan føles når man drømmer</h2>
+<br>
+<h2>Litt mere info:</h2>
+<h3>Laget: Juni 2021</h3>
+<h3>Laget i: Dreams Playstation 4/5</h3>
+<h3>Tidsbruk: 7 Timer</h3>
+<h3>Status: Ferdig</h3>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  </style>
+  </head>
+  <body>
+  
+    <a href="https://youtu.be/YvGoEN-OO9g"><button class="button">Se Selv</button></a>
+  
+  </body>

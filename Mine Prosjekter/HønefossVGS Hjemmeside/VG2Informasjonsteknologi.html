@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <style>
+      /* Endrer bakgrunds bilde */
+    body {
+      background-image: url('White.png');
+    }
+    </style>
+    </head>
+    <body>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {box-sizing: border-box;}
+
+  /* Bestemmer fonten som headeren bruker */
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* innstilinger for header bakgrunden */
+  .header {
+    overflow: hidden;
+    background-color: #545454;
+    padding: 20px 10px;
+  }
+
+  /* Endrer header innstilinger  */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  /* Endrer farge på header når man har musepeker over */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Endrer farge på header knappen som er aktiv */
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  .header-right {
+    float: right;
+  }
+
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .header-right {
+      float: none;
+    }
+  }
+  </style>
+  </head>
+
+  <body>
+
+
+<!-- Endrer på hvor de forkjelige knappene på header tar deg til -->
+    <div class="header">
+      <a href="Index.html" class="logo"><img src="HVGSLogo.png" alt="Logo" width="250" height="50"></a>
+      <div class="header-right">
+        <a href="Index.html" class=>Hjem</a>
+        <a href="Kontakt.html">Kontakt Oss</a>
+        <a href="C:\Users\aleks\Desktop\Portefolio Side\Code\Index.html">Tilbake til Portefolio</a>
+      </div>
+    </div>
+    </body>
+
+    <!-- Endrer innstilinger på sidebar som feks. font -->
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      /* forkjelige sidebar innstilinger */
+      .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      /* Enda flere sidebar innstilinger */
+      .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidebar a:hover {
+        color: #f1f1f1;
+      }
+
+      /* hvordan sidebar ser ut når den er lokket */
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      /* Hvordan sidebar ser ut åpen */
+      .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+      }
+
+      .openbtn:hover {
+        background-color: #444;
+      }
+
+      #main {
+        transition: margin-left .5s;
+        padding: 16px;
+      }
+
+      /* Endre utsendet når høyden er mindre enn 450 piksler*/
+      @media screen and (max-height: 450px) {
+        .sidebar {padding-top: 15px;}
+        .sidebar a {font-size: 18px;}
+      }
+      </style>
+      </head>
+      <body>
+
+    <head>
+      <!-- Endrer font -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+      
+      .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      /* Endrer fare når musepeker er over */
+      .sidebar a:hover {
+        color: #f1f1f1;
+      }
+      
+      /* hvordan den ser ut lukket */
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      /* hvordan den ser ut åpen */
+      .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+      }
+      
+      .openbtn:hover {
+        background-color: #444;
+      }
+      
+      #main {
+        transition: margin-left .5s;
+        padding: 16px;
+      }
+      
+      /* Endre størelse på mindre skjermer */
+      @media screen and (max-height: 450px) {
+        .sidebar {padding-top: 15px;}
+        .sidebar a {font-size: 18px;}
+      }
+      </style>
+      </head>
+      <body>
+      
+        <!-- Endrer teksten i sidebaren -->
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="VG1InformasjonsteknologiOgMedieproduksjon.html">1IMA</a>
+          <a href="VG2Informasjonsteknologi.html">2ITA</a>
+          <a href="Kantina.html">Kantina</a>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Utdaningsprogrammene</button>  
+      </div>
+      
+      <script>
+
+        // bestemmer hva funksjonen openNav gjør
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      // bestemmer hva funksjonen closeNav gjør
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+         
+      </body>
+
+</body>
+</html>
+
+        <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <style>
+          * {box-sizing: border-box}
+          body {font-family: "Lato", sans-serif;}
+          
+          /* Brukes til å endre utsendet */
+          .tab {
+            float: left;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            width: 30%;
+            height: 300px;
+          }
+          
+          /* Brukes til å endre utsendet til knappene */
+          .tab button {
+            display: block;
+            background-color: inherit;
+            color: black;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+          }
+          
+          /* Endre fargen på knappene når musepekeren er over den */
+          .tab button:hover {
+            background-color: #ddd;
+          }
+          
+          
+          .tab button.active {
+            background-color: #ccc;
+          }
+          
+          /* Brukes til å endre utsendet */ 
+          .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            width: 70%;
+            border-left: none;
+            height: 300px;
+          }
+          </style>
+          </head>
+        </body>
+
+        <body>
+          <!-- Tekst -->
+          <p>&nbsp;</p>
+          <h1>VG2: Informasjonsteknologi</h1>
+          <p>&nbsp;</p>
+          <h3>Har du drømmer om å jobbe innenfor IT?</h3>
+          <h4>Informasjonsteknologi er et av VG2 valgene hvis man går Informasjonsteknologi og Medieproduksjon i VG1!</h4>
+          <p>&nbsp;</p>
+          
+          <img src="ita.jpg" alt="Logo" width="699" height="400">
+
+        </body>
+
+        <body>
+          <h2>Det Du Lærer:</h2>
+
+          <!-- Endrer hva slags type liste det er og hva slags ikon som er foran -->
+            <style>
+            ul.b {
+              list-style-type: square;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <!-- Endrer hva som står i lista  -->
+            <ul class="b">
+              <li>Om brukerstøtte, nettverk, IT-sikkerhet og programmering</li>
+              <li>Ideutvikling og problemløsning</li>
+              <li>Etikk og moral</li>
+            </ul>
+            
+            <h2>Passer best om du er:</h2>
+            <!-- Endrer hva som står i lista  -->
+              <ul class="b">
+              <li>Interessert i IT, operativsystem, nettverk og programvare</li>
+              <li>Generelt interessert i teknologi</li>
+             </ul>
+        </body>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+/* Bestemmer fonten som headeren bruker */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* innstilinger for header bakgrunden */
+.header {
+  overflow: hidden;
+  background-color: #545454;
+  padding: 20px 10px;
+}
+
+/* Endrer header innstilinger  */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Endrer farge på header når man har musepeker over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Endrer farge på header knappen som er aktiv */
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+
+<!-- Endrer på hvor de forkjelige knappene på header tar deg til -->
+  <div class="header">
+    <a href="Index.html" class="logo"><img src="HVGSLogo.png" alt="Logo" width="250" height="50"></a>
+    <div class="header-right">
+      <a class=>Tlf:+47 31002700</a>
+      <a class=>E-post: honefossvgs@viken.no</a>
+    </div>
+  </div>
+  </body>

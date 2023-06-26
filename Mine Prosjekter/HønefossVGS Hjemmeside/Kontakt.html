@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+      <style>
+        /* Endrer bakgrunds bilde */
+      body {
+        background-image: url('White.png');
+      }
+      </style>
+      </head>
+      <body>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {box-sizing: border-box;}
+
+    /* Bestemmer fonten som headeren bruker */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+      overflow: hidden;
+      background-color: #f1f1f1;
+      padding: 20px 10px;
+    }
+
+    /* Endrer header innstilinger  */
+    .header a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    /* Endrer farge på header når man har musepeker over */
+    .header a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Endrer farge på header knappen som er aktiv */
+    .header a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    .header-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .header-right {
+        float: none;
+      }
+    }
+    </style>
+    </head>
+
+    <body>
+
+
+
+      <div class="header">
+        <a href="Index.html" class="logo"><img src="HVGSLogo.png" alt="Logo" width="250" height="50"></a>
+        <div class="header-right">
+          <a href="Index.html">Hjem</a>
+          <a class="active" href="Kontakt.html">Kontakt Oss</a>
+          <a href="C:\Users\aleks\Desktop\Portefolio Side\Code\Index.html">Tilbake til Portefolio</a>
+        </div>
+      </div>
+      </body>
+
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          font-family: "Lato", sans-serif;
+        }
+
+        .sidebar {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+
+        .sidebar a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+          color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+
+        .openbtn {
+          font-size: 20px;
+          cursor: pointer;
+          background-color: #111;
+          color: white;
+          padding: 10px 15px;
+          border: none;
+        }
+
+        .openbtn:hover {
+          background-color: #444;
+        }
+
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+        }
+
+        /* Endre utsendet når høyden er mindre enn 450 piksler*/
+        @media screen and (max-height: 450px) {
+          .sidebar {padding-top: 15px;}
+          .sidebar a {font-size: 18px;}
+        }
+        </style>
+        </head>
+        <body>
+
+          <!-- Viser til hvilke sider de forkjelige knappene tar deg til -->
+
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="VG1InformasjonsteknologiOgMedieproduksjon.html">1IMA</a>
+          <a href="VG2Informasjonsteknologi.html">2ITA</a>
+          <a href="Kantina.html">Kantina</a>
+        </div>
+
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">☰ Utdaningsprogrammene</button>
+        </div>
+
+        <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+
+        <h1>&nbsp;Kontakt Oss</h1>
+        <h3>&nbsp;&nbsp;&nbsp;Er det noe du lurer på? Ta Kontakt</h3>
+        <p>&nbsp;</p>
+        <h2>&nbsp;Telefon Og E-post</h2>
+        <head>
+          <style>
+          
+          ul.b {
+            list-style-type: square;
+          }
+          
+          </style>
+          </head>
+          <body>
+          
+          
+          
+          <ul class="b">
+            <li>&nbsp;Telefon: +47 3100 2700</li>
+            <li>&nbsp;E-post: honefossvgs@viken.no</li>
+          </ul>
+          
+          </body>
+
+          <body>
+            <p>&nbsp;</p>
+            <h2>&nbsp;Adresse</h2>
+            <p>&nbsp;&nbsp;&nbsp;Osloveien 17, 3511 Hønefoss</p>
+          </body>
+
+          <body>
+            <p>&nbsp;</p>
+            <h2>&nbsp;Postboks</h2>
+            <p>&nbsp;&nbsp;&nbsp;Postboks 3084, 3501 Hønefoss</p>
+          </body>
+
+          <body>
+            <p>&nbsp;</p>
+            <h2>&nbsp;Åpningstider</h2>
+            <p>&nbsp;&nbsp;&nbsp;Mandag–fredag kl. 08:00–15:30</p>
+          </body>
+
+
+
+        </body>
